@@ -1,0 +1,5 @@
+50000
+systemUser
+systemUser
+active
+admin

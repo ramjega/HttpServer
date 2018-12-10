@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SRM Bank</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style media="screen">
+        body {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url(https://images.unsplash.com/photo-1518600654093-2a24cddafa38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80) no-repeat center center fixed;
+            background-size: cover;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+
+<div class="container-fluid">
+    <div class="col-md-6">
+        <center><h1 class="text-primary"><b>SRM Bank</b></h1></center>
+        <div class="col-md-4">
+            <select id="select" onchange="run()">
+                <option value="">Select here</option>
+                <option value="create">Create</option>
+                <option value="find">Find</option>
+                <option value="deposit">Deposit</option>
+                <option value="withdraw">Withdraw</option>
+                <option value="transfer">Cash Transfer</option>
+                <option value="findActivity">See Activity</option>
+            </select>
+        </div>
+        <div class="col-md-4" id="display">
+        </div>
+        <div class="col-md-4" id="response">
+        </div>
+    </div>
+</div>
+<script src="bundle.js"></script>
+
+</body>
+</html>
